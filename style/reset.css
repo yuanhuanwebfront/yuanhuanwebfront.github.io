@@ -7,3 +7,17 @@ ol,
 li {
   list-style: none;
 }
+a{
+  color: #197bf5;
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+pre,
+code {
+  border-radius: 8px;
+  font-family: Consolas, Monaco, monospace;
+}

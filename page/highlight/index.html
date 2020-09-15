@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/monokai-sublime.css">
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>HighLight Js</title>
+</head>
+
+<body>
+
+    <p>具体细节请查看<a href="https://highlightjs.org/">&nbsp;官方文档</a></p>
+
+    <p>HighLight分为两部分</p>
+    <br>
+    <p>1. Js文件 <a href="https://highlightjs.org/download/">点击此处下载</a></p>
+    <p>2. 主题文件 <a href="https://github.com/highlightjs/highlight.js/tree/master/src/styles">点击此处下载</a></p>
+    
+    <pre>
+        <code class="xml">
+            &lt;123&gt;
+        </code>
+    </pre>
+
+    <pre>
+        <code class="javascript">
+            var a = 1;
+            
+            function add(x, y){ 
+                return x + y; 
+            }
+        </code>
+        <code class="javascript">
+            import App from './app';
+
+            let { a } = App;
+            
+            export default a;
+        </code>
+    </pre>
+</body>
+<script src="./js/highlight.pack.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    });
+</script>
+
+</html>
