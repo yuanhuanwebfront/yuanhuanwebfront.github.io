@@ -5,4 +5,30 @@ body{
 }
 p{
     line-height: 22px;
+    margin-bottom: 4px;
+}
+p.li{
+	position: relative;
+	padding-left: 20px;
+}
+p.li:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -3px;
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	background-color: #333;
+}
+h4{
+	line-height: 40px;
+}
+.code-area.small{
+	padding: 0;
+	width: 600px;
+}
+.code-area.middle{
+	width: 800px;
 }
