@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 ul,
 ol,
@@ -20,4 +21,32 @@ pre,
 code {
   border-radius: 8px;
   font-family: Consolas, Monaco, monospace;
+}
+
+
+body{
+  transition: 0.3s;
+  width: 100vw;
+  min-height: 100vh;
+  background: #355c7d;
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+}
+
+/* 定位 */
+.p-re{
+  position: relative;
+}
+.p-ab{
+  position: absolute;
+}
+.p-fix{
+  position: fixed;
+}
+
+/* flex相关 */
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
