@@ -11,3 +11,10 @@ $('.card').on('click', function(e){
   location.href = url;
 
 })
+
+// 回到顶部按钮操作
+$('.back-top').on('click', function(e){
+  $("html,body").animate({
+    scrollTop: 0
+  }, 500);
+})

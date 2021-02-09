@@ -2,83 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/monokai-sublime.css">
-    <link rel="stylesheet" href="../../style/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>HighLight Js</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/monokai-sublime.css">
+	<link rel="stylesheet" href="../../style/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<title>HighLight Js</title>
 </head>
 
 <body>
+	<div class="page-container">
+		<a href="/" class="home-icon" title="回到首页"></a>
+		<i class="home-icon back-top" title="回到顶部"></i>
 
-    <p>具体细节请查看<a href="https://highlightjs.org/">&nbsp;官方文档</a>，HighLight主要由两部分</p>
-    <br>
-    <p class="li">Js文件 <a target="_blank" href="https://highlightjs.org/download/">点击此处下载</a></p>
-    <p class="li">主题文件 <a target="_blank" href="https://github.com/highlightjs/highlight.js/tree/master/src/styles">点击此处下载</a></p>
-    <br>
-    <h4>使用方法</h4>
-    <pre class="code-area middle">
-        <code class="html">
-            &lt;!-- 引入主题文件 --&gt;
-            &lt;link rel="stylesheet" href="path/${theme}.css"&gt;
-            &lt;!-- 引入js文件 --&gt;
-            &lt;script src="/path/highlight.js"&gt;&lt;/script&gt;
-        </code>
-        <code class="javascript">
-            document.addEventListener('DOMContentLoaded', (event) => {
-                document.querySelectorAll('pre code').forEach((block) => {
-                    hljs.highlightBlock(block);
-                });
-            });
-        </code>
-    </pre>
+		<h4 class="article-title">HighLight Js</h4>
 
-    <h4>html</h4>
-    <p>需要注意的是，插入的html必须先进行<a target="_blank" href="https://www.sojson.com/rehtml">转义操作</a></p>
-    <pre>
-        <code class="xml">
-            &lt;div id=&quot;app&quot;&gt;
-                &lt;p&gt;this is a html Code&lt;/p&gt;
-                &lt;p&gt;这是一段html代码&lt;/p&gt;
-            &lt;/div&gt;
-        </code>
-    </pre>
+		<p>
+			<span>具体细节请查看：</span> 
+			<a href="https://highlightjs.org/">官方文档</a> 
+		</p>
+		<br>
+
+		<p class="li">
+			<span>Js文件</span>	 
+			<a target="_blank" href="https://highlightjs.org/download/">点击此处查看</a>
+		</p>
+		<br>
+
+		<p class="li">
+			<span>主题文件</span> 
+			<a target="_blank" href="https://github.com/highlightjs/highlight.js/tree/master/src/styles">点击此处查看</a>
+		</p>
+		<br>
+		<br>
+
+		<h4 class="mini-title">使用方法</h4>
+		<pre class="code-area middle">
+			<code class="html">
+	&lt;!-- 引入主题文件 --&gt;
+	&lt;link rel="stylesheet" href="path/${theme}.css"&gt;
+	&lt;!-- 引入js文件 --&gt;
+	&lt;script src="/path/highlight.js"&gt;&lt;/script&gt;
+			</code>
+		</pre>
+
+		<h4 class="mini-title">html</h4>
+		<p>需要注意的是，插入的html必须先进行<a target="_blank" href="https://www.sojson.com/rehtml">转义操作</a></p>
+		<pre>
+		<code class="xml">
+ &lt;div id=&quot;app&quot;&gt;
+   &lt;p&gt;this is a html Code&lt;/p&gt;
+   &lt;p&gt;这是一段html代码&lt;/p&gt;
+ &lt;/div&gt;
+		</code>
+		</pre>
 
 
-    <h4>Css</h4>
-    <pre>
-        <code class="css">
-            #app{
-                margin: 0 auto;
-                color: #ccc;
-            }
-            #app p {
-                font-size: 20px;
-                font-weight: 300;
-            }
-        </code>
-    </pre>
+		<h4 class="mini-title">Css</h4>
+		<pre>
+		<code class="css">
+ #app{
+   margin: 0 auto;
+   color: #ccc;
+ }
+ #app p {
+   font-size: 20px;
+   font-weight: 300;
+ }
+		</code>
+		</pre>
 
-    <h4>Javascript</h4>
-    <pre>
-        <code class="javascript">
-            let a = 1,
-                b = 2;
-            function add(x, y){
-                return x + y;
-            }
-            add(a, b);
-        </code>
-    </pre>
+		<h4 class="mini-title">Javascript</h4>
+		<pre>
+      <code class="javascript">
+  let a = 1,
+      b = 2;
+
+  function add(x, y){
+    return x + y;
+  }
+	
+  add(a, b);
+      </code>
+		</pre>
+	</div>
 </body>
 <script src="./js/highlight.pack.js"></script>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="../../script/index.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-        });
-    });
+	document.addEventListener('DOMContentLoaded', (event) => {
+		document.querySelectorAll('pre code').forEach((block) => {
+			hljs.highlightBlock(block);
+		});
+	});
 </script>
 
 </html>
