@@ -108,3 +108,19 @@ body::-webkit-scrollbar-track {
 }
 .page-container span.word {
 }
+
+
+/* 移动端适配 */
+@media (max-width: 500px) {
+  .home-icon {
+    width: 30px;
+    height: 30px;
+    bottom: 70px;
+    right: 20px;
+    background-size: 20px 20px;
+  }
+  .back-top {
+    background-image: url(../assets/img/back-top.png);
+    bottom: 30px;
+  }
+}

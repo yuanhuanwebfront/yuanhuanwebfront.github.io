@@ -10,4 +10,5 @@ body{
 }
 .code-area{
   text-align: left;
+  overflow: auto;
 }
