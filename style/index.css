@@ -59,6 +59,11 @@
 	background-size: 100% 210px;
 	background-repeat: no-repeat;
 }
+.card.link{
+	background-image: url(../assets/cover/link.png);
+	background-size: 100% 210px;
+	background-repeat: no-repeat;
+}
 
 
 
