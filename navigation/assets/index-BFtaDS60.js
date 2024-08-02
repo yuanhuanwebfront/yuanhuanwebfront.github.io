@@ -1,0 +1,1 @@
+import{k as a,l as u,v as l,q as i,s as r,f as c,u as p,x as m}from"./index-BFx0vlym.js";const d=[a[0],u[0],l[0],i[0],r[0]],f=d.map(t=>({label:t.meta.title,path:t.path,icon:t.meta.icon,list:[...t.navList]}));function v(){const t=c(f),n=p(),o=m(()=>{let s=t.value.find(e=>e.path==n.path);return s&&s.list?s.list:[]});return{menus:t,cptPathMenus:o}}export{v as u};
